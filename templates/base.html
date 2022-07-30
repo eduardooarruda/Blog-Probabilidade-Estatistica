@@ -21,13 +21,13 @@
                 <i class="fas fa-bars"></i>
             </label>
 
-            <a href="" id="logo">
+            <a href="{{url_for('home')}}" id="logo">
                 <span class="link-nav">Blog</span>
             </a>
 
             <ul id="itens">
-                <li><a href="#" class="link-nav">Estatística descritiva</a></li>
-                <li><a href="#" class="link-nav">Glossário</a></li>
+                <li><a href="{{url_for('estatisticaDescritiva')}}" class="link-nav">Estatística descritiva</a></li>
+                <li><a href="{{url_for('glossario')}}" class="link-nav">Glossário</a></li>
 
             </ul>
         </nav>

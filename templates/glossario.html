@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block css%} <link rel="stylesheet" href="{{ url_for('static', filename='css/glossario.css') }}">{% endblock css %}
+{% block titulo %}Home{% endblock titulo %}
+
+{% block conteudo %}
+<!-- https://brasilescola.uol.com.br/matematica/estatistica-2.htm -->
+
+ <h1 class="text-center">Glossário</h1>
+  <div class="mt-4 p-5 rounded cor">
+    <h2>A</h2>
+    <p><b>Amostra:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h2>C</h2>
+    <p><b>Classes:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h1>D</h1>
+    <p><b>Dado Estatístico:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h1>P</h1>
+    <p><b>População:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h1>R</h1>
+    <p><b>Rol:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h1>T</h1>
+    <p><b>Tabela de distribuição de frequência:</b> </p>
+    <hr>
+  </div>
+
+  <div class="mt-4 p-5 rounded cor">
+    <h1>V</h1>
+    <p><b>Variável:</b> </p>
+    <hr>
+  </div>
+
+{% endblock conteudo %}

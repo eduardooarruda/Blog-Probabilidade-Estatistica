@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block css%} {% endblock css %}
+{% block titulo %}Home{% endblock titulo %}
+
+{% block conteudo %}
+<div class="container">
+  <h1 class="text-center">Estatística descritiva</h1>
+
+  <p>Segundo a <a href="https://pt.wikipedia.org/wiki/Estatística_descritiva" class="">Wikipedia</a> a estatística descritiva é um ramo da estatística que aplica várias técnicas para descrever e sumarizar um conjunto de dados. Diferencia-se da estatística inferencial, ou estatística indutiva, pelo objectivo: organizar, sumarizar dados ao invés de usar os dados em aprendizado sobre a população. Esse princípio torna a estatística descritiva uma disciplina independente.</p>
+
+  <p>Algumas medidas que são normalmente usadas para descrever um conjunto de dados são medidas de tendência central e medidas de variabilidade ou dispersão.</p>
+
+  <div class="row">
+    <div class="col-sm-6 col-12 pt-3">
+      <h3>Medidas de tendência central</h3>
+      <!--       <ul class="list-group">
+        <li class="list-group-item">Média</li>
+        <li class="list-group-item">Mediana</li>
+        <li class="list-group-item">Moda</li>
+      </ul> -->
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Média</a>
+        <a href="#" class="list-group-item list-group-item-action">Mediana</a>
+        <a href="#" class="list-group-item list-group-item-action">Moda</a>
+      </div>
+    </div>
+    <div class="col-sm-6 col-12 pt-3">
+      <h3>Medidas de dispersão</h3>
+      <!--       <ul class="list-group">
+        <li class="list-group-item">Amplitude</li>
+        <li class="list-group-item">Variância</li>
+        <li class="list-group-item">Desvio Padrão</li>
+        <li class="list-group-item">Coeficiente de Variação</li>
+      </ul> -->
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Amplitude</a>
+        <a href="#" class="list-group-item list-group-item-action">Variância</a>
+        <a href="#" class="list-group-item list-group-item-action">Desvio Padrão</a>
+        <a href="#" class="list-group-item list-group-item-action">Coeficiente de Variação</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock conteudo %}
