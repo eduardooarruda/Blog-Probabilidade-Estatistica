@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,300&display=swap');
+
+#logo {
+    margin-left: 80px;
+    font-weight: bold;
+    color: MidnightBlue;
+    text-decoration: none;
+}
+nav a {
+    line-height: 80px;
+}
+
+#itens {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: navy;
+    /* font-size: 20px; */
+    /* margin-bottom:10px; */
+}
+
+.link-nav:active,
+.link-nav:hover {
+    color: indigo;
+    font-size: 30px;
+    transition: 1s;
+}
+
+#logout{
+    color: brown;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: LightSteelBlue;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+#cabecalho {
+    margin-bottom: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: Apple Chancery, cursive; */
+    font-family: 'Mali', cursive;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+nav ul {
+    float: right;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: navy;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* INIIO CAMPO DE PESQUISA */
+#barra-pesquisa{
+    display: inline-block;
+}
+
+#campo-busca{
+    border: 1px solid navy;
+    border-radius: 5px 0 0 5px ;
+    width: 300px;
+}
+
+#btn-busca{
+    border: 1px solid navy;
+    border-radius: 0 5px 5px 0;
+    padding: 0 10px;
+    margin-left: -7px;
+    background-color: navy;
+    color: white;
+}
+
+#btn-busca:hover{
+    background-color: indigo;
+    transition: 1s;
+}
+
+/* FIM DO CAMPO DE PESQUISA */
+@media (max-width: 400px) {
+    nav a span {
+        display: none;
+    }
+
+    #campo-busca{
+        width: 80%;
+    }
+
+}
+@media (max-width: 500px) {
+    #logo {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 1040px) {
+    .checkbtn {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: Silver;
+        top: 80px;
+        left: -120%;
+        text-align: left;
+        transition: all 1s;
+    }
+    nav ul li {
+        display: block;
+    }
+
+    .link-nav:active,
+    .link-nav:hover {
+        color: indigo;
+        font-size: 30px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@media (max-width: 1195px) {
+    #campo-busca{
+        width: 200px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #campo-busca{
+        width: 150px;
+    }
+}
+
+/* Footer */
+
+#rodape{
+    background-color: SteelBlue ;
+    height: 200px;
+    color: white;
+    margin-top: 30px;
+}
+main{
+    flex-grow: 1;
+}
+.icone-footer{
+    color: white;
+    font-size: 35px;
+}
+.icone-footer:hover{
+    color: black;
+    font-size: 50px;
+}
+#conteudo-footer{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#grupo-icones-footer{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;  */
+    justify-content:center;
+    gap: 50px;
+    margin-top: 20px;
+    /* padding: 20px;
+    background-color: yellow; */
+}  
+
+#copyright{
+    margin-top: 30px;
+    font-size: 15px;
+}
