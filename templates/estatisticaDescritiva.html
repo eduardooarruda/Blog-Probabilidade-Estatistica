@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block css%} {% endblock css %}
-{% block titulo %}Home{% endblock titulo %}
+{% block titulo %}Estatística descritiva{% endblock titulo %}
 
 {% block conteudo %}
 <div class="container">
@@ -12,14 +12,15 @@
   <p>Algumas medidas que são normalmente usadas para descrever um conjunto de dados são medidas de tendência central e medidas de variabilidade ou dispersão.</p>
 
   <div class="row">
-    <div class="col-sm-6 col-12 pt-3">
+    <div class="col-sm-6 col-12 pt-4">
       <h3>Medidas de tendência central</h3>
+      <p>São medidas que representam todo o conjuto de dados.</p>
       <!--       <ul class="list-group">
         <li class="list-group-item">Média</li>
         <li class="list-group-item">Mediana</li>
         <li class="list-group-item">Moda</li>
       </ul> -->
-      <div class="list-group">
+      <div class="list-group pt-3">
         <a href="#" class="list-group-item list-group-item-action">Média</a>
         <a href="#" class="list-group-item list-group-item-action">Mediana</a>
         <a href="#" class="list-group-item list-group-item-action">Moda</a>
@@ -27,6 +28,7 @@
     </div>
     <div class="col-sm-6 col-12 pt-3">
       <h3>Medidas de dispersão</h3>
+      <p>São medidas que são utilizadas para medir a variação de um conjunto de dados em relação a sua média.</p>
       <!--       <ul class="list-group">
         <li class="list-group-item">Amplitude</li>
         <li class="list-group-item">Variância</li>
@@ -34,7 +36,7 @@
         <li class="list-group-item">Coeficiente de Variação</li>
       </ul> -->
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">Amplitude</a>
+        <a href="{{url_for('amplitude')}}" class="list-group-item list-group-item-action">Amplitude</a>
         <a href="#" class="list-group-item list-group-item-action">Variância</a>
         <a href="#" class="list-group-item list-group-item-action">Desvio Padrão</a>
         <a href="#" class="list-group-item list-group-item-action">Coeficiente de Variação</a>
@@ -42,5 +44,11 @@
     </div>
   </div>
 
+  <h2 class="text-center pt-5">Referências</h2>
+
+  <a href="https://brasilescola.uol.com.br/matematica/medidas-dispersao-amplitude-desvio.htm" cçlass="pb-5">Brasil escola: "Medidas de dispersão: amplitude e desvio"</a>
+
 </div>
+
+<!-- https://proeducacional.com/ead/curso-preparatorio-cfg-modulo-i/capitulos/metodos-quantitativos/aulas/medidas-de-tendencia-central-e-dispersao/#:~:text=As%20medidas%20de%20tendência%20central%20são%20utilizadas%20para%20representar%20um,%3A%20média%2C%20mediana%20e%20moda. -->
 {% endblock conteudo %}

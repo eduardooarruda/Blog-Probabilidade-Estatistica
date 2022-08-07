@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block css%} {% endblock css %}
+{% block titulo %}Home{% endblock titulo %}
+
+{% block conteudo %}
+
+<div class="container">
+  <h1 class="text-center"> Amplitude</h1>
+
+  <p>Para encontrar a amplitude basta subtrair o maior elemento com o menor elemento do conjunto de dados. </p>
+
+  <p>Por exemplo, imaginemos que um posto de gasolina entre os meses de janeiro a maio teve respectivamente
+  os seguintes preços da gasolina 5.60, 4.70, 4.70, 6.30 e 6.10. Portanto podemos concluir que a amplitude
+  neste exemplo é 6.30 - 4.70 = 1.60.
+  </p>
+
+  <h3 class="text-center">Assista o vídeo para complementar o seu conhecimento.</h3>
+  <center>
+    <iframe width="80%" height="350" src="https://www.youtube.com/embed/YInQYJwfVAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</div>
+
+{% endblock conteudo %}

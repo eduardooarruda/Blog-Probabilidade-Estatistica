@@ -14,3 +14,7 @@ def estatisticaDescritiva():
 @app.route("/glossario")
 def glossario():
     return render_template("glossario.html")
+
+@app.route("/amplitude")
+def amplitude():
+    return render_template("amplitude.html")
