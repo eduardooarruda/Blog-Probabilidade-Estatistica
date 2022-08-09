@@ -18,3 +18,7 @@ def glossario():
 @app.route("/amplitude")
 def amplitude():
     return render_template("amplitude.html")
+
+@app.route("/variancia")
+def variancia():
+    return render_template("varianca.html")

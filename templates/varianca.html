@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block css%} {% endblock css %}
+{% block titulo %}Varianca{% endblock titulo %}
+
+{% block conteudo %}
+
+<h1 class="text-center">Variância</h1>
+
+  <p>É uma medida de dispersão que mostra quanto os elementos de um conjunto de dados estão distantes da média. Para calcular a variância, primeiro tem que ser calculado a média aritmética dos dados, depois cada dado é subtraído da média e elevada ao quadrado, posteriormente somado e dividido pela quantidade de dados.
+</p>
+
+  <p>Por exemplo, imaginemos que em uma escola Maria tenha tirado as seguintes notas: 10 no primeiro trimestre, 7.5  no segundo trimestre e 6.5 no terceiro trimestre, então a sua média aritmética é igual a 8, já João tirou 4.8 , 9.2  e 10 e a sua média aritmética também é 8, podemos concluir que tanto Maria quanto João possuem a mesma média aritmética, mas somente com a média não podermos perceber a variação das notas, portanto para descobrir a variação, utilizamos a seguinte fórmula: </p>
+
+ <img src="{{ url_for('static', filename='img/varianca_formula.png') }}" class="img-fluid" alt="...">
+
+  <p>Onde cada nota vai ser subtraído da média, depois elevado ao quadrado, posteriormente somado e por último dividido pela quantidade de notas.
+</p>
+
+  <img src="{{ url_for('static', filename='img/varianca_maria.png') }}" class="img-fluid" alt="...">
+
+
+  <p>Desta forma podemos perceber que a variância das notas de Maria é:
+</p>
+
+  <img src="{{ url_for('static', filename='img/varianca_joao.png') }}" class="img-fluid" alt="...">
+
+
+  <p>E de João é:
+</p>
+  <h3 class="text-center">Assista o vídeo para complementar o seu conhecimento.</h3>
+  <center>
+    <iframe width="95%" height="350" src="https://www.youtube.com/embed/oj_MkXKLPSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+
+{% endblock conteudo %}
