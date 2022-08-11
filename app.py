@@ -22,3 +22,7 @@ def amplitude():
 @app.route("/variancia")
 def variancia():
     return render_template("varianca.html")
+
+@app.route("/desvio-padrao")
+def desvio_padrao():
+    return render_template("desvio_padrao.html")
