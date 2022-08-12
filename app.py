@@ -26,3 +26,19 @@ def variancia():
 @app.route("/desvio-padrao")
 def desvio_padrao():
     return render_template("desvio_padrao.html")
+
+@app.route("/coeficiente-variacao")
+def coeficiente_variacao():
+    return render_template("coeficiente_variacao.html")
+
+@app.route("/media")
+def media():
+    return render_template("media.html")
+
+@app.route("/mediana")
+def mediana():
+    return render_template("mediana.html")
+
+@app.route("/moda")
+def moda():
+    return render_template("moda.html")

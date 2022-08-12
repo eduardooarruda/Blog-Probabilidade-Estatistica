@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block css%} {% endblock css %}
+{% block titulo %}Coeficiente de variação{% endblock titulo %}
+
+{% block conteudo %}
+<h1 class="text-center">Coeficiente de variação</h1>
+
+<p>É utilizado para comparar a variabilidade dois ou mais conjuntos de dados que possuem unidades de medida diferentes. </p>
+
+<p>O resultado do cálculo é dado em porcentagem.</p>
+
+<p>Quanto menor o grau de variação mais homogênea será o conjunto de dados, já quanto maior o grau de variação mais heterogênea é o conjunto de dados.
+</p>
+
+<p>A fórmula do coeficiente de variação é:
+</p>
+
+<img src="{{ url_for('static', filename='img/coeficiente_variacao.png') }}" class="img-fluid" alt="...">
+
+<p>Onde s é desvio padrão  e  x é a média.</p>
+{% endblock conteudo %}
