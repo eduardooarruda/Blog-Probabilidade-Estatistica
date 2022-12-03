@@ -42,3 +42,7 @@ def mediana():
 @app.route("/moda")
 def moda():
     return render_template("moda.html")
+
+@app.route("/questoes")
+def questoes():
+    return render_template("questoes.html")

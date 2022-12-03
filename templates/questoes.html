@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+{% block css%} {% endblock css %}
+{% block titulo %}Questoes{% endblock titulo %}
+
+{% block conteudo %}
+    <h1 class="text-center">Questões</h1>
+    <h2 class="text-center">Teoria da amostragem</h2>
+
+    <div id="questoes">
+        <div class="questao p-4">
+
+            <p style="font-weight: bold">1) Analise a seguinte situação e diferencie o que é população e o que é a mostra:</p>
+            <p>Avaliação da eficácia de uma campanha de vacinação em crianças com idade entre 1 e 2 anos, 192 mães com filhos nesta idade foram pesquisadas sobre a última vez que vacinaram seus filhos. </p>
+
+            <p>
+            <center><a class="btn btn-outline-primary text-center" data-bs-toggle="collapse" href="#questao1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+            </a></center>
+            </p>
+            <div class="collapse" id="questao1">
+              <div class="border border-secondary rounded container">
+                <p><b>População:</b> Todas as mães de crianças com idades entre 1 e 2 anos.</p>
+                <p><b>Amostra:</b> 192 mães entrevistadas.</p>
+                <a href="https://youtu.be/HtLfGbi87bI">Referência.</a>
+              </div>
+            </div>
+            <hr>
+
+            <!--QUESTAO 2-->
+
+            <p style="font-weight: bold">2) Qual é o tipo de amostragem empregada nesta situação: </p>
+            <p>Ao escalar uma comissão para atuar em determinado projeto, uma instituição de pesquisa decidiu selecionar aleatoriamente 4 pessoas brancas, 3 pardas e 4 negras.</p>
+
+            <p>
+            <center><a class="btn btn-outline-primary text-center" data-bs-toggle="collapse" href="#questao2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+            </a></center>
+            </p>
+            <div class="collapse" id="questao2">
+              <div class="border border-secondary rounded container">
+                <p><b>Amostragem estratificada.</b></p>
+                <a href="https://youtu.be/HtLfGbi87bI">Referência.</a>
+              </div>
+            </div>
+            <hr>
+
+            <!--QUESTAO 3-->
+            <p style="font-weight: bold">3) Um estudo sobre o desempenho dos vendedores de uma grande cadeia de lojas de varejo está
+            sendo planejado. Para tanto, deve ser colhida uma amostra probabilística dos vendedores.</p>
+            <p style="font-weight: bold">Classifique cada uma das amostras abaixo conforme a seguinte tipologia:</p>
+            <p style="font-weight: bold">(A) Amostragem casual simples</p>
+            <p style="font-weight: bold">(B) Amostragem Sistemática</p>
+            <p style="font-weight: bold">(C) Amostragem estratificada</p>
+            <p style="font-weight: bold">(D) Amostragem por meio de conglomerados</p>
+
+            <p>( ) Lista de todos os vendedores (que atuam em todas as lojas da rede). Selecionei todos
+                   vendedores que ocupavam posições múltiplas de 15 (15ª posição, 30ª posição, 45ª
+                   posição, 60ª posição, 75ª posição, 90ª posição, 105ª posição, etc)</p>
+            <p>( ) Escolhi casualmente 3 lojas da rede. A amostra foi composta de todos os vendedores
+                   que atualmente em cada uma destas 3 lojas.</p>
+            <p>( ) Em cada uma das lojas, identifiquei todos os vendedores (lista de vendedores por loja).
+                   Selecionei aleatoriamente k vendedores da loja. Onde k é um número inteiro
+                   proporcional à quantidade de vendedores da loja.</p>
+            <p>( ) Lista de todos os vendedores (que atuam em todas as lojas da rede). Selecionei
+                   aleatoriamente N vendedores.</p>
+
+            <p>
+            <center><a class="btn btn-outline-primary text-center" data-bs-toggle="collapse" href="#questao3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+            </a></center>
+            </p>
+            <div class="collapse" id="questao3">
+              <div class="border border-secondary rounded container">
+                <p>( B ) A amostra é sistemática, já que a retirada dos elementos da amostra é periódica, ou
+                         seja, um vendedor é retirado a cada 15 presentes na lista.
+                </p>
+                <p>( D ) A amostragem é por meio de conglomerados, já que a população (vendedores)
+                         apresenta uma subdivisão em grupos (lojas), e 3 grupos foram casualmente escolhidos
+                         (sorteados) para compor a amostra.</p>
+                <p>( C ) A amostragem é estratificada, já que a amostra leva em consideração a presença de
+                         estratos (lojas) na composição da população (vendedores). Neste caso, a amostragem
+                         estratificada é proporcional, pois o número de elementos selecionados em cada estrato
+                         é proporcional à quantidade de elementos existentes no estrato.
+                </p>
+                <p>( A ) A amostragem é casual simples, pois todos os elementos da população (vendedores)
+                         tem igual probabilidade de pertencer à amostra.
+                </p>
+              </div>
+            </div>
+            <hr>
+
+            <!--QUESTAO 4-->
+            <p style="font-weight: bold">4) Para cada uma das amostras abaixo, informar o tipo do processo de amostragem:</p>
+            <p style="font-weight: bold">P - Amostragem probabilística</p>
+            <p style="font-weight: bold">NP - Amostragem não probabilística</p>
+            <p style="font-weight: bold">Para uma pesquisa sobre os hábitos dos estudantes. Construí uma amostra com o seguinte
+procedimento:</p>
+            <p>( ) Todos os meus colegas da faculdade (tenho telefone e email de todos eles).</p>
+            <p>( ) Fiquei na única porta de entrada da escola abordando todos os meus conhecidos.</p>
+            <p>( ) Fiquei na única porta de entrada da escola e cada 12 pessoas que entravam, eu
+                   abordava uma</p>
+            <p>( ) Consegui uma lista de todos os alunos das escolas com uma ordenação aleatória, e
+                   selecionei os 20 primeiros da lista.</p>
+            <p>( ) Consegui uma lista de todos os alunos das escolas em ordem alfabética. Gerei 20
+                   números aleatórios. Selecionei da lista de alunos aqueles que ocupavam posições
+                   equivalentes aos números aleatórios gerados.</p>
+
+            <p>
+            <center><a class="btn btn-outline-primary text-center" data-bs-toggle="collapse" href="#questao4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Resposta
+            </a></center>
+            </p>
+            <div class="collapse" id="questao4">
+              <div class="border border-secondary rounded container">
+                    <p>( NP ) A amostra não é probabilística, já que nem todos os elementos da população
+                           (estudantes) tem probabilidade diferente de zero de pertencer à amostra. No caso, os
+                           estudantes que não são colegas tem probabilidade zero de pertencer à amostra</p>
+                    <p>( NP ) A amostra não é probabilística, já que nem todos os elementos da população
+                              (estudantes) tem probabilidade diferente de zero de pertencer à amostra. No caso, os
+                              estudantes que não são conhecidos tem probabilidade zero de pertencer à amostra</p>
+                    <p>( P ) A amostra é probabilística, já que todas as pessoas tem probabilidade conhecida e
+                             diferente de zero de pertencer à amostra.</p>
+                    <p>( P ) A amostra é probabilística, já que todos os alunos das escolas tem probabilidade
+                             conhecida e diferente de zero de pertencer à amostra.</p>
+                    <p>( P ) A amostra é probabilística, já que todos os alunos das escolas tem probabilidade
+                             conhecida e diferente de zero de pertencer à amostra. Este caso se assemelha ao
+                             anterior.</p>
+
+              </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+{% endblock conteudo %}
